@@ -1,21 +1,30 @@
 using System;
 using TechTalk.SpecFlow;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using Xunit;
 
 namespace BookingFilters.Tests
 {
     public class StarRatingFilterSteps
     {
+        private IWebDriver _driver;
+
+    
         [Given(@"I am on the booking.com website")]
         public void GivenIAmOnTheBookingWebsiteHomePage()
         {
-            ScenarioContext.Current.Pending();
+            _driver = new ChromeDriver();
+            _driver.Navigate().GoToUrl("https://www.booking.com/");
         }
+
 
         [Given(@"I select a destination")]
         public void GivenISelectDestination()
         {
-            ScenarioContext.Current.Pending();
+            _driver.FindElement(By.Id("ss")).SendKeys("Limerick");
         }
+        /*
 
         [Given(@"I select a check in date")]
         public void GivenISelectCheckInDate()
@@ -34,5 +43,7 @@ namespace BookingFilters.Tests
         {
             ScenarioContext.Current.Pending();
         }
+
+        */
     }
 }

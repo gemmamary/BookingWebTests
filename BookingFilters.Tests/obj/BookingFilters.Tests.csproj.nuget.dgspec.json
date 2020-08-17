@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj": {}
+    "C:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj": {}
   },
   "projects": {
-    "c:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj": {
+    "C:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj",
         "projectName": "BookingFilters.Tests",
-        "projectPath": "c:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj",
+        "projectPath": "C:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\BookingFilters.Tests.csproj",
         "packagesPath": "C:\\Users\\gemmi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\obj\\",
+        "outputPath": "C:\\Users\\gemmi\\source\\repos\\BookingWebTests\\BookingFilters.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gemmi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,17 +40,25 @@
               "target": "Package",
               "version": "[16.5.0, )"
             },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[83.0.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[84.0.4147.3001, )"
+            },
             "Specflow.xUnit": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[3.3.74, )"
             },
             "coverlet.collector": {
               "target": "Package",
               "version": "[1.2.0, )"
-            },
-            "specflow": {
-              "target": "Package",
-              "version": "[3.3.74, )"
             },
             "xunit": {
               "target": "Package",
@@ -58,7 +66,7 @@
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

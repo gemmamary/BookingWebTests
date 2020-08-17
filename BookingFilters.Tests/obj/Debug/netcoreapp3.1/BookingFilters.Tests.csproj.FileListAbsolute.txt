@@ -1,3 +1,4 @@
+c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
@@ -21,15 +22,18 @@ c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netco
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\testhost.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\WebDriver.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\Utf8Json.dll
+c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\Validation.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.assert.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.core.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\Xunit.SkippableFact.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
