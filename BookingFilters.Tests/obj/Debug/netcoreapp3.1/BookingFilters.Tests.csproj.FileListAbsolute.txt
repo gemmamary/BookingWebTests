@@ -100,11 +100,13 @@ c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netco
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csprojAssemblyReference.cache
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.AssemblyInfoInputs.cache
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.AssemblyInfo.cs
-c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csproj.CoreCompileInputs.cache
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csproj.CopyComplete
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.dll
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.pdb
 c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.genruntimeconfig.cache
+C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csproj.CoreCompileInputs.cache
+C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csprojAssemblyReference.cache

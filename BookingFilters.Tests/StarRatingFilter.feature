@@ -9,6 +9,6 @@ Scenario: Filter accommodation by star rating
     And I select a check in date
     And I select a check out date
     And I submit my booking details
-    When I filter the results by a star rating of 2 stars
-    Then My results contain only 2 star hotels 
+    When I filter the results by a star rating of 3 stars
+    Then My results contain only 3 star hotels 
     

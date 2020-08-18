@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\gemmi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gemmi\\.nuget\\packages"
+      "C:\\Users\\gemmi\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }
