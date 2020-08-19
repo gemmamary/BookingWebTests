@@ -31,8 +31,8 @@ namespace BookingFilters.Tests
             var selectCheckinMonth = new SelectElement(_driver.FindElement(By.XPath("//div[@class=\"sb-date-field__select -month-year js-date-field__part\"]//select")));
             var selectCheckinDay = new SelectElement(_driver.FindElement(By.XPath("//select[@name=\"checkin_monthday\"]")));
 
-            selectCheckinMonth.SelectByText("November 2020");
-            selectCheckinDay.SelectByText("10, Tuesday");
+            selectCheckinMonth.SelectByValue("10-2020");
+            selectCheckinDay.SelectByValue("5");
         }
         
         [Given(@"I select a check out date")]
