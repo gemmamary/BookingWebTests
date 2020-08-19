@@ -28,7 +28,7 @@ namespace BookingFilters.Tests
         [Given(@"I select a check in date")]
         public void GivenISelectACheckInDate()
         {
-            var selectCheckinMonth = new SelectElement(_driver.FindElement(By.XPath("//div[@class=\"sb-date-field__select -month-year js-date-field__part\"]//select")));
+            var selectCheckinMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[1]//select")));
             var selectCheckinDay = new SelectElement(_driver.FindElement(By.XPath("//select[@name=\"checkin_monthday\"]")));
 
             selectCheckinMonth.SelectByValue("10-2020");
@@ -38,7 +38,7 @@ namespace BookingFilters.Tests
         [Given(@"I select a check out date")]
         public void GivenISelectACheckOutDate()
         {
-            var selectCheckoutMonth = new SelectElement(_driver.FindElement(By.XPath("//select[@aria-label=\"Check-out month\"]")));
+            var selectCheckoutMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[2]//select")));
             var selectCheckoutDay = new SelectElement(_driver.FindElement(By.XPath("//select[@name=\"checkout_monthday\"]")));
 
             selectCheckoutMonth.SelectByText("November 2020");
