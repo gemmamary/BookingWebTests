@@ -14,6 +14,7 @@ Scenario Outline: Filter accommodation by star rating
 
     Examples: 
         | starRating |
+        | 2          |
         | 3          |
         | 4          |
         | 5          |

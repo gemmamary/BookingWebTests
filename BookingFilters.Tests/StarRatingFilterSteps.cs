@@ -17,11 +17,37 @@ namespace BookingFilters.Tests
         public void GivenIAmOnTheBooking_ComWebsite()
         {
             _driver = new ChromeDriver();
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://www.booking.com/");
-            _driver.FindElement(By.XPath("//button[@data-gdpr-consent=\"accept\"]")).Click();
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
+            var excOne = By.Id("onetrust-accept-btn-handler");
+            var excTwo = By.XPath("//button[@data-gdpr-consent=\"accept\"]");
+
+            if (IsElementPresent(excOne))
+            {
+                _driver.FindElement(excOne).Click();
+            }
+            else
+            {
+                _driver.FindElement(excTwo).Click();
+            }
+
         }
-        
+
+        private bool IsElementPresent(By by)
+        {
+            try
+            {
+                _driver.FindElement(by);
+                return true;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
         [Given(@"I select the destination (.*)")]
         public void GivenISelectTheDestination(string destination)
         {
@@ -63,19 +89,10 @@ namespace BookingFilters.Tests
         [Then(@"My results contain only (.*) star hotels")]
         public void ThenResultsContainOnlyHotelsWithAStarRatingOf(string starRating)
         {
-            var results = _driver.FindElements(By.ClassName("sr-hotel__name"));
-            bool limerickThreeStarPresent = false;
+            
+            var firstResult = _driver.FindElement(By.XPath($"//i[@title=\"{starRating}-star hotel\"]"));
 
-            foreach(IWebElement result in results)
-            {
-                if (result.Text.Contains("Limerick City Hotel"))
-                {
-                    limerickThreeStarPresent = true;
-                    break;
-                }
-            }
-
-            Assert.True(limerickThreeStarPresent);
+            Assert.NotNull(firstResult);
         }
         
         [AfterScenario]

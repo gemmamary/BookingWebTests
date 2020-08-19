@@ -81,13 +81,18 @@ namespace BookingFilters.Tests
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Filter accommodation by star rating")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="Filter accommodation by star rating")]
         [Xunit.TraitAttribute("FeatureTitle", "Star Rating Filter")]
         [Xunit.TraitAttribute("Description", "Filter accommodation by star rating")]
-        public virtual void FilterAccommodationByStarRating()
+        [Xunit.InlineDataAttribute("2", new string[0])]
+        [Xunit.InlineDataAttribute("3", new string[0])]
+        [Xunit.InlineDataAttribute("4", new string[0])]
+        [Xunit.InlineDataAttribute("5", new string[0])]
+        public virtual void FilterAccommodationByStarRating(string starRating, string[] exampleTags)
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("starRating", starRating);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Filter accommodation by star rating", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
@@ -113,7 +118,7 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.Given("I am on the booking.com website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-    testRunner.And("I select a destination", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I select the destination Galway", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
     testRunner.And("I select a check in date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -125,10 +130,10 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.And("I submit my booking details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
-    testRunner.When("I filter the results by a star rating of 3 stars", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When(string.Format("I filter the results by a star rating of {0} stars", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
-    testRunner.Then("My results contain only 3 star hotels", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then(string.Format("My results contain only {0} star hotels", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
