@@ -109,4 +109,3 @@ c:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netco
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csproj.CoreCompileInputs.cache
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
-C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csprojAssemblyReference.cache

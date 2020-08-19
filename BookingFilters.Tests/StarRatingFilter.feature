@@ -1,4 +1,4 @@
-Feature: Star Rating Filter
+﻿Feature: Star Rating Filter
     In order to find accommodation at a certain standard
     As a user booking accommodation
     I would like to only see results with a given star rating
