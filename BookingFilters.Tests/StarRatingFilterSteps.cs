@@ -62,5 +62,11 @@ namespace BookingFilters.Tests
         {
             var results = _driver.FindElements(By.Id("hotellist_inner"));
         }
+
+        [AfterScenario]
+        public void DisposeWebDriver()
+        {
+            _driver.Dispose();
+        }
     }
 }
