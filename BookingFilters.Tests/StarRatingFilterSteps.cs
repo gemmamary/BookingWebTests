@@ -3,6 +3,7 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+using Xunit;
 
 namespace BookingFilters.Tests
 {
@@ -16,15 +17,15 @@ namespace BookingFilters.Tests
         public void GivenIAmOnTheBooking_ComWebsite()
         {
             _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.Navigate().GoToUrl("https://www.booking.com/");
             _driver.FindElement(By.XPath("//button[@data-gdpr-consent=\"accept\"]")).Click();
         }
         
-        [Given(@"I select a destination")]
-        public void GivenISelectADestination()
+        [Given(@"I select the destination (.*)")]
+        public void GivenISelectTheDestination(string destination)
         {
-            _driver.FindElement(By.Id("ss")).SendKeys("Limerick");
+            _driver.FindElement(By.Id("ss")).SendKeys(destination);
         }
         
         [Given(@"I select a check in date")]
@@ -53,16 +54,28 @@ namespace BookingFilters.Tests
             _driver.FindElement(By.XPath("//button[@data-sb-id=\"main\"]")).Click();
         }
         
-        [When(@"I filter the results by a star rating of 3 stars")]
-        public void WhenIFilterTheResultsByAStarRatingOf3Stars()
+        [When(@"I filter the results by a star rating of (.*) stars")]
+        public void WhenIFilterTheResultsByAStarRatingOf(string starRating)
         {
-            _driver.FindElement(By.XPath("//a[@data-id=\"class-3\"]//label")).Click();
+            _driver.FindElement(By.XPath($"//a[@data-id=\"class-{starRating}\"]//label")).Click();
         }
         
-        [Then(@"My results contain only 3 star hotels")]
-        public void ThenMyResultsContainOnly3StarHotels()
+        [Then(@"My results contain only (.*) star hotels")]
+        public void ThenResultsContainOnlyHotelsWithAStarRatingOf(string starRating)
         {
-            var results = _driver.FindElements(By.Id("hotellist_inner"));
+            var results = _driver.FindElements(By.ClassName("sr-hotel__name"));
+            bool limerickThreeStarPresent = false;
+
+            foreach(IWebElement result in results)
+            {
+                if (result.Text.Contains("Limerick City Hotel"))
+                {
+                    limerickThreeStarPresent = true;
+                    break;
+                }
+            }
+
+            Assert.True(limerickThreeStarPresent);
         }
         
         [AfterScenario]

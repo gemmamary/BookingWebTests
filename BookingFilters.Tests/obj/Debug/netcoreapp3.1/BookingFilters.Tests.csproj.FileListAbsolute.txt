@@ -109,3 +109,4 @@ C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netco
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.dll
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.pdb
 C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.genruntimeconfig.cache
+C:\Users\gemmi\source\repos\BookingWebTests\BookingFilters.Tests\obj\Debug\netcoreapp3.1\BookingFilters.Tests.csprojAssemblyReference.cache
