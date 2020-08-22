@@ -90,7 +90,7 @@ namespace BookingFilters.Tests
         public void ThenResultsContainOnlyHotelsWithAStarRatingOf(string starRating)
         {
             
-            var firstResult = _driver.FindElement(By.XPath($"//i[@title=\"{starRating}-star hotel\"]"));
+            var firstResult = _driver.FindElement(By.XPath($"//div[@id=\"hotellist_inner\"]//div[@data-class=\"{starRating}\"]"));
 
             Assert.NotNull(firstResult);
         }
