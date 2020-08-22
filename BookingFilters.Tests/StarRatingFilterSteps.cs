@@ -2,8 +2,6 @@
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-using Xunit;
 
 namespace BookingFilters.Tests
 {
@@ -24,7 +22,6 @@ namespace BookingFilters.Tests
 
             _bookingPage = BookingPage.NavigateTo(_driver);
             _bookingPage.AcceptCookies();
-
         }
 
         [Given(@"I select the destination (.*)")]
@@ -81,7 +78,6 @@ namespace BookingFilters.Tests
         public void DisposeWebDriver()
         {
             _driver.Dispose();
-        }
-        
+        }      
     }
 }

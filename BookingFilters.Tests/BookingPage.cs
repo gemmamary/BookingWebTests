@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
 namespace BookingFilters.Tests
@@ -82,6 +79,7 @@ namespace BookingFilters.Tests
 
         public void AcceptCookies()
         {
+            // var cookiesBanner = By.Id("onetrust-banner-sdk");
             var excOne = By.Id("onetrust-accept-btn-handler");
             var excTwo = By.XPath("//button[@data-gdpr-consent=\"accept\"]");
 
