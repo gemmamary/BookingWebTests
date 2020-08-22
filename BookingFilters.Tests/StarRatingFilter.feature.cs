@@ -81,20 +81,20 @@ namespace BookingFilters.Tests
             this.TestTearDown();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="Filter accommodation by star rating")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="Filter results by star rating")]
         [Xunit.TraitAttribute("FeatureTitle", "Star Rating Filter")]
-        [Xunit.TraitAttribute("Description", "Filter accommodation by star rating")]
+        [Xunit.TraitAttribute("Description", "Filter results by star rating")]
         [Xunit.InlineDataAttribute("1", new string[0])]
         [Xunit.InlineDataAttribute("2", new string[0])]
         [Xunit.InlineDataAttribute("3", new string[0])]
         [Xunit.InlineDataAttribute("4", new string[0])]
         [Xunit.InlineDataAttribute("5", new string[0])]
-        public virtual void FilterAccommodationByStarRating(string starRating, string[] exampleTags)
+        public virtual void FilterResultsByStarRating(string starRating, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("starRating", starRating);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Filter accommodation by star rating", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Filter results by star rating", null, tagsOfScenario, argumentsOfScenario);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -135,6 +135,59 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 13
     testRunner.Then(string.Format("My results contain only {0} star hotels", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Filter results by unrated accommodation")]
+        [Xunit.TraitAttribute("FeatureTitle", "Star Rating Filter")]
+        [Xunit.TraitAttribute("Description", "Filter results by unrated accommodation")]
+        public virtual void FilterResultsByUnratedAccommodation()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Filter results by unrated accommodation", null, tagsOfScenario, argumentsOfScenario);
+#line 23
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 24
+    testRunner.Given("I am on the booking.com website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 25
+    testRunner.And("I select the destination Dublin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 26
+    testRunner.And("I select a check in date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 27
+    testRunner.And("I select a check out date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 28
+    testRunner.And("I submit my booking details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 29
+    testRunner.When("I filter the results by unrated accommodation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 30
+    testRunner.Then("My results contain only unrated hotels", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
