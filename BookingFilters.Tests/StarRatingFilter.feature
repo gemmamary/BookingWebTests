@@ -5,7 +5,7 @@
 
 Scenario Outline: Filter accommodation by star rating
     Given I am on the booking.com website
-    And I select the destination Galway
+    And I select the destination Dublin
     And I select a check in date
     And I select a check out date
     And I submit my booking details
@@ -14,6 +14,7 @@ Scenario Outline: Filter accommodation by star rating
 
     Examples: 
         | starRating |
+        | 1          |
         | 2          |
         | 3          |
         | 4          |

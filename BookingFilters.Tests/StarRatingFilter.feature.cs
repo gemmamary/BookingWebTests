@@ -84,6 +84,7 @@ namespace BookingFilters.Tests
         [Xunit.SkippableTheoryAttribute(DisplayName="Filter accommodation by star rating")]
         [Xunit.TraitAttribute("FeatureTitle", "Star Rating Filter")]
         [Xunit.TraitAttribute("Description", "Filter accommodation by star rating")]
+        [Xunit.InlineDataAttribute("1", new string[0])]
         [Xunit.InlineDataAttribute("2", new string[0])]
         [Xunit.InlineDataAttribute("3", new string[0])]
         [Xunit.InlineDataAttribute("4", new string[0])]
@@ -118,7 +119,7 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.Given("I am on the booking.com website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-    testRunner.And("I select the destination Galway", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I select the destination Dublin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
     testRunner.And("I select a check in date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
