@@ -92,8 +92,8 @@ namespace BookingFilters.Tests
             _driver.FindElement(By.XPath($"//a[@data-id=\"class-0\"]//label")).Click();
         }
 
-        [Then(@"My results contain only (.*) star hotels")]
-        public void ThenResultsContainOnlyHotelsWithAStarRatingOf(string starRating)
+        [Then(@"My results contain only (.*) star accommodation")]
+        public void ThenResultsContainOnlyAccommodationWithAStarRatingOf(string starRating)
         {
             
             var firstResult = _driver.FindElement(By.XPath($"//div[@id=\"hotellist_inner\"]//div[@data-class=\"{starRating}\"]"));
@@ -101,8 +101,8 @@ namespace BookingFilters.Tests
             Assert.NotNull(firstResult);
         }
 
-        [Then(@"My results contain only unrated hotels")]
-        public void ThenMyResultsContainOnlyUnratedHotels()
+        [Then(@"My results contain only unrated accommodation")]
+        public void ThenMyResultsContainOnlyUnratedAccommodation()
         {
             var firstResult = _driver.FindElement(By.XPath($"//div[@id=\"hotellist_inner\"]//div[@data-class=\"0\"]"));
 

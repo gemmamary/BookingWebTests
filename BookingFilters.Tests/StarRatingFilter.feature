@@ -10,7 +10,7 @@ Scenario Outline: Filter results by star rating
     And I select a check out date
     And I submit my booking details
     When I filter the results by a star rating of <starRating> stars
-    Then My results contain only <starRating> star hotels 
+    Then My results contain only <starRating> star accommodation 
 
     Examples: 
         | starRating |
@@ -27,5 +27,5 @@ Scenario: Filter results by unrated accommodation
     And I select a check out date
     And I submit my booking details
     When I filter the results by unrated accommodation
-    Then My results contain only unrated hotels
+    Then My results contain only unrated accommodation
     

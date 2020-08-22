@@ -134,7 +134,7 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When(string.Format("I filter the results by a star rating of {0} stars", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
-    testRunner.Then(string.Format("My results contain only {0} star hotels", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then(string.Format("My results contain only {0} star accommodation", starRating), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -187,7 +187,7 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("I filter the results by unrated accommodation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 30
-    testRunner.Then("My results contain only unrated hotels", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("My results contain only unrated accommodation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
