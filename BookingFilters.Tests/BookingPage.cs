@@ -25,7 +25,7 @@ namespace BookingFilters.Tests
         {
             set
             {
-                var selectCheckinMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[1]//select")));
+                var selectCheckinMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[1]/select")));
                 selectCheckinMonth.SelectByValue(value);             
             }
         }
@@ -43,7 +43,7 @@ namespace BookingFilters.Tests
         {
             set
             {
-                var selectCheckoutMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[2]//select")));
+                var selectCheckoutMonth = new SelectElement(_driver.FindElement(By.XPath("(//div[@class=\"sb-date-field__select -month-year js-date-field__part\"])[2]/select")));
                 selectCheckoutMonth.SelectByValue("10-2020");
             }
         }

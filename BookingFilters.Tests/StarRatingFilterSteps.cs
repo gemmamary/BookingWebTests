@@ -2,6 +2,7 @@
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Xunit;
 
 namespace BookingFilters.Tests
 {
@@ -27,7 +28,7 @@ namespace BookingFilters.Tests
         [Given(@"I select the destination (.*)")]
         public void GivenISelectTheDestination(string destination)
         {
-            _bookingPage.Destination = "Dublin";
+            _bookingPage.Destination = destination;
         }
         
         [Given(@"I select a check in date")]
@@ -65,13 +66,13 @@ namespace BookingFilters.Tests
         [Then(@"My results contain only (.*) star accommodation")]
         public void ThenResultsContainOnlyAccommodationWithAStarRatingOf(string starRating)
         {
-            _bookingResultsPage.ResultHasCorrectStarRating(starRating);
+            Assert.True(_bookingResultsPage.ResultHasCorrectStarRating(starRating));
         }
 
         [Then(@"My results contain only unrated accommodation")]
         public void ThenMyResultsContainOnlyUnratedAccommodation()
         {
-            _bookingResultsPage.ResultHasCorrectStarRating("0");
+            Assert.True(_bookingResultsPage.ResultHasCorrectStarRating("0"));
         }
 
         [AfterScenario]
