@@ -1,1 +1,0 @@
-BookingFilters.Tests.StarRatingFilterFeature.FilterAccommodationByStarRating
